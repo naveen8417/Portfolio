@@ -221,6 +221,53 @@ h1 {
     }
 }
 
+@media screen and (max-width: 480px) {
+    .nav-links {
+        top: 4rem;
+        font-size: 1rem;
+    }
+
+    .nav-links li {
+        margin: 1.5rem 0;
+    }
+
+    .container {
+        padding: 1.5rem;
+    }
+
+    .image-container img {
+        height: 200px;
+        width: 200px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .buttons {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .slider-dots {
+        margin-top: 1rem;
+    }
+
+    .hamburger {
+        width: 2rem;
+        height: 1.5rem;
+    }
+
+    .hamburger .bar {
+        height: 3px;
+    }
+
+    .hamburger.active .bar:nth-child(1),
+    .hamburger.active .bar:nth-child(3) {
+        transform: none;
+    }
+}
+
 .skill-section {
     display:block;
      background-color: #000;
@@ -282,6 +329,51 @@ h1 {
 
 .skill-percent {
     float: left;
+}
+
+@media screen and (max-width: 480px) {
+    .skill-section {
+        padding: 50px 10px;
+    }
+
+    .skill-title {
+        font-size: 3rem;
+    }
+
+    .skill-title::after {
+        font-size: 3rem;
+        top: -15px;
+    }
+
+    .skills-container {
+        flex-direction: column;
+        align-items: stretch;
+        max-width: 100%;
+    }
+
+    .skills {
+        width: 100%;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .skill-name {
+        font-size: 1rem;
+        margin-bottom: 8px;
+    }
+
+    .skill-bar {
+        height: 8px;
+    }
+
+    .skill-progress {
+        transition: width 1.5s ease-out;
+    }
+
+    .skill-percent {
+        float: none;
+        margin-top: 5px;
+    }
 }
 
 /* @media screen and (max-width:480px ){
